@@ -1,0 +1,16 @@
+//
+//  KKFrameProject.pch
+//  KKFrameProject
+//
+//  Created by 孔繁武 on 2018/6/6.
+//  Copyright © 2018年 孔繁武. All rights reserved.
+//
+
+#ifndef KKFrameProject_pch
+#define KKFrameProject_pch
+
+#import "KKAddition.h"
+#import "KKInheritance.h"
+#import "KKMacro.h"
+
+#endif /* KKFrameProject_pch */

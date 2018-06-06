@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCD8D2CD20C77FA0007EFEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2CC20C77FA0007EFEAB /* AppDelegate.m */; };
+		FCD8D2D520C77FA2007EFEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD8D2D420C77FA2007EFEAB /* Assets.xcassets */; };
+		FCD8D2DB20C77FA2007EFEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2DA20C77FA2007EFEAB /* main.m */; };
+		FCD8D30A20C77FFA007EFEAB /* KKNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2E720C77FFA007EFEAB /* KKNavigationBar.m */; };
+		FCD8D30B20C77FFA007EFEAB /* UIColor+KKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2EB20C77FFA007EFEAB /* UIColor+KKColor.m */; };
+		FCD8D30C20C77FFA007EFEAB /* UIButton+KKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2ED20C77FFA007EFEAB /* UIButton+KKButton.m */; };
+		FCD8D30D20C77FFA007EFEAB /* UIBarButtonItem+KKBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2EE20C77FFA007EFEAB /* UIBarButtonItem+KKBarButtonItem.m */; };
+		FCD8D30E20C77FFA007EFEAB /* KKHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2F520C77FFA007EFEAB /* KKHomeController.m */; };
+		FCD8D30F20C77FFA007EFEAB /* KKDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2F920C77FFA007EFEAB /* KKDiscoverController.m */; };
+		FCD8D31020C77FFA007EFEAB /* KKMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2FB20C77FFA007EFEAB /* KKMessageController.m */; };
+		FCD8D31120C77FFA007EFEAB /* KKProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D2FF20C77FFA007EFEAB /* KKProfileController.m */; };
+		FCD8D31220C77FFA007EFEAB /* KKTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D30520C77FFA007EFEAB /* KKTestViewController.m */; };
+		FCD8D31320C77FFA007EFEAB /* KKMainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D30620C77FFA007EFEAB /* KKMainTabbarController.m */; };
+		FCD8D31420C77FFA007EFEAB /* KKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D30720C77FFA007EFEAB /* KKNavigationController.m */; };
+		FCD8D31520C77FFA007EFEAB /* KKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD8D30820C77FFA007EFEAB /* KKBaseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FCD8D2C820C77FA0007EFEAB /* KKFrameProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKFrameProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD8D2CB20C77FA0007EFEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCD8D2CC20C77FA0007EFEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCD8D2D420C77FA2007EFEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCD8D2D920C77FA2007EFEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD8D2DA20C77FA2007EFEAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCD8D2E520C77FFA007EFEAB /* KKNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNavigationBar.h; sourceTree = "<group>"; };
+		FCD8D2E620C77FFA007EFEAB /* KKInheritance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInheritance.h; sourceTree = "<group>"; };
+		FCD8D2E720C77FFA007EFEAB /* KKNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNavigationBar.m; sourceTree = "<group>"; };
+		FCD8D2E920C77FFA007EFEAB /* KKMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMacro.h; sourceTree = "<group>"; };
+		FCD8D2EB20C77FFA007EFEAB /* UIColor+KKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKColor.m"; sourceTree = "<group>"; };
+		FCD8D2EC20C77FFA007EFEAB /* KKAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAddition.h; sourceTree = "<group>"; };
+		FCD8D2ED20C77FFA007EFEAB /* UIButton+KKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KKButton.m"; sourceTree = "<group>"; };
+		FCD8D2EE20C77FFA007EFEAB /* UIBarButtonItem+KKBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+KKBarButtonItem.m"; sourceTree = "<group>"; };
+		FCD8D2EF20C77FFA007EFEAB /* UIColor+KKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKColor.h"; sourceTree = "<group>"; };
+		FCD8D2F020C77FFA007EFEAB /* UIBarButtonItem+KKBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+KKBarButtonItem.h"; sourceTree = "<group>"; };
+		FCD8D2F120C77FFA007EFEAB /* UIButton+KKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KKButton.h"; sourceTree = "<group>"; };
+		FCD8D2F520C77FFA007EFEAB /* KKHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHomeController.m; sourceTree = "<group>"; };
+		FCD8D2F620C77FFA007EFEAB /* KKHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHomeController.h; sourceTree = "<group>"; };
+		FCD8D2F820C77FFA007EFEAB /* KKDiscoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDiscoverController.h; sourceTree = "<group>"; };
+		FCD8D2F920C77FFA007EFEAB /* KKDiscoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDiscoverController.m; sourceTree = "<group>"; };
+		FCD8D2FB20C77FFA007EFEAB /* KKMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMessageController.m; sourceTree = "<group>"; };
+		FCD8D2FC20C77FFA007EFEAB /* KKMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMessageController.h; sourceTree = "<group>"; };
+		FCD8D2FE20C77FFA007EFEAB /* KKProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProfileController.h; sourceTree = "<group>"; };
+		FCD8D2FF20C77FFA007EFEAB /* KKProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKProfileController.m; sourceTree = "<group>"; };
+		FCD8D30120C77FFA007EFEAB /* KKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNavigationController.h; sourceTree = "<group>"; };
+		FCD8D30220C77FFA007EFEAB /* KKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBaseViewController.h; sourceTree = "<group>"; };
+		FCD8D30420C77FFA007EFEAB /* KKTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTestViewController.h; sourceTree = "<group>"; };
+		FCD8D30520C77FFA007EFEAB /* KKTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTestViewController.m; sourceTree = "<group>"; };
+		FCD8D30620C77FFA007EFEAB /* KKMainTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMainTabbarController.m; sourceTree = "<group>"; };
+		FCD8D30720C77FFA007EFEAB /* KKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNavigationController.m; sourceTree = "<group>"; };
+		FCD8D30820C77FFA007EFEAB /* KKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBaseViewController.m; sourceTree = "<group>"; };
+		FCD8D30920C77FFA007EFEAB /* KKMainTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMainTabbarController.h; sourceTree = "<group>"; };
+		FCD8D31720C78032007EFEAB /* KKFrameProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFrameProject.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCD8D2C520C77FA0007EFEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCD8D2BF20C77FA0007EFEAB = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2CA20C77FA0007EFEAB /* KKFrameProject */,
+				FCD8D2C920C77FA0007EFEAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCD8D2C920C77FA0007EFEAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2C820C77FA0007EFEAB /* KKFrameProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCD8D2CA20C77FA0007EFEAB /* KKFrameProject */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2E120C77FFA007EFEAB /* Class */,
+				FCD8D31620C77FFE007EFEAB /* OtherFiles */,
+			);
+			path = KKFrameProject;
+			sourceTree = "<group>";
+		};
+		FCD8D2E120C77FFA007EFEAB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2F320C77FFA007EFEAB /* View */,
+				FCD8D2E220C77FFA007EFEAB /* ViewModel */,
+				FCD8D2F220C77FFA007EFEAB /* Model */,
+				FCD8D2E320C77FFA007EFEAB /* Tools */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		FCD8D2E220C77FFA007EFEAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCD8D2E320C77FFA007EFEAB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2E420C77FFA007EFEAB /* Inheritance */,
+				FCD8D2E820C77FFA007EFEAB /* Macro */,
+				FCD8D2EA20C77FFA007EFEAB /* Addition */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FCD8D2E420C77FFA007EFEAB /* Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2E520C77FFA007EFEAB /* KKNavigationBar.h */,
+				FCD8D2E620C77FFA007EFEAB /* KKInheritance.h */,
+				FCD8D2E720C77FFA007EFEAB /* KKNavigationBar.m */,
+			);
+			path = Inheritance;
+			sourceTree = "<group>";
+		};
+		FCD8D2E820C77FFA007EFEAB /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2E920C77FFA007EFEAB /* KKMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		FCD8D2EA20C77FFA007EFEAB /* Addition */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2EB20C77FFA007EFEAB /* UIColor+KKColor.m */,
+				FCD8D2EC20C77FFA007EFEAB /* KKAddition.h */,
+				FCD8D2ED20C77FFA007EFEAB /* UIButton+KKButton.m */,
+				FCD8D2EE20C77FFA007EFEAB /* UIBarButtonItem+KKBarButtonItem.m */,
+				FCD8D2EF20C77FFA007EFEAB /* UIColor+KKColor.h */,
+				FCD8D2F020C77FFA007EFEAB /* UIBarButtonItem+KKBarButtonItem.h */,
+				FCD8D2F120C77FFA007EFEAB /* UIButton+KKButton.h */,
+			);
+			path = Addition;
+			sourceTree = "<group>";
+		};
+		FCD8D2F220C77FFA007EFEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCD8D2F320C77FFA007EFEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2F420C77FFA007EFEAB /* Home */,
+				FCD8D2F720C77FFA007EFEAB /* Discover */,
+				FCD8D2FA20C77FFA007EFEAB /* Message */,
+				FCD8D2FD20C77FFA007EFEAB /* Profile */,
+				FCD8D30020C77FFA007EFEAB /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD8D2F420C77FFA007EFEAB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2F520C77FFA007EFEAB /* KKHomeController.m */,
+				FCD8D2F620C77FFA007EFEAB /* KKHomeController.h */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FCD8D2F720C77FFA007EFEAB /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2F820C77FFA007EFEAB /* KKDiscoverController.h */,
+				FCD8D2F920C77FFA007EFEAB /* KKDiscoverController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		FCD8D2FA20C77FFA007EFEAB /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2FB20C77FFA007EFEAB /* KKMessageController.m */,
+				FCD8D2FC20C77FFA007EFEAB /* KKMessageController.h */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		FCD8D2FD20C77FFA007EFEAB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2FE20C77FFA007EFEAB /* KKProfileController.h */,
+				FCD8D2FF20C77FFA007EFEAB /* KKProfileController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FCD8D30020C77FFA007EFEAB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D30120C77FFA007EFEAB /* KKNavigationController.h */,
+				FCD8D30220C77FFA007EFEAB /* KKBaseViewController.h */,
+				FCD8D30320C77FFA007EFEAB /* 测试 */,
+				FCD8D30620C77FFA007EFEAB /* KKMainTabbarController.m */,
+				FCD8D30720C77FFA007EFEAB /* KKNavigationController.m */,
+				FCD8D30820C77FFA007EFEAB /* KKBaseViewController.m */,
+				FCD8D30920C77FFA007EFEAB /* KKMainTabbarController.h */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FCD8D30320C77FFA007EFEAB /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D30420C77FFA007EFEAB /* KKTestViewController.h */,
+				FCD8D30520C77FFA007EFEAB /* KKTestViewController.m */,
+			);
+			path = "测试";
+			sourceTree = "<group>";
+		};
+		FCD8D31620C77FFE007EFEAB /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D2CB20C77FA0007EFEAB /* AppDelegate.h */,
+				FCD8D2CC20C77FA0007EFEAB /* AppDelegate.m */,
+				FCD8D2D420C77FA2007EFEAB /* Assets.xcassets */,
+				FCD8D2D920C77FA2007EFEAB /* Info.plist */,
+				FCD8D2DA20C77FA2007EFEAB /* main.m */,
+				FCD8D31720C78032007EFEAB /* KKFrameProject.pch */,
+			);
+			path = OtherFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCD8D2C720C77FA0007EFEAB /* KKFrameProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD8D2DE20C77FA2007EFEAB /* Build configuration list for PBXNativeTarget "KKFrameProject" */;
+			buildPhases = (
+				FCD8D2C420C77FA0007EFEAB /* Sources */,
+				FCD8D2C520C77FA0007EFEAB /* Frameworks */,
+				FCD8D2C620C77FA0007EFEAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKFrameProject;
+			productName = KKFrameProject;
+			productReference = FCD8D2C820C77FA0007EFEAB /* KKFrameProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD8D2C020C77FA0007EFEAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "孔繁武";
+				TargetAttributes = {
+					FCD8D2C720C77FA0007EFEAB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = FCD8D2C320C77FA0007EFEAB /* Build configuration list for PBXProject "KKFrameProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCD8D2BF20C77FA0007EFEAB;
+			productRefGroup = FCD8D2C920C77FA0007EFEAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCD8D2C720C77FA0007EFEAB /* KKFrameProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCD8D2C620C77FA0007EFEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD8D2D520C77FA2007EFEAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCD8D2C420C77FA0007EFEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD8D2DB20C77FA2007EFEAB /* main.m in Sources */,
+				FCD8D30D20C77FFA007EFEAB /* UIBarButtonItem+KKBarButtonItem.m in Sources */,
+				FCD8D31020C77FFA007EFEAB /* KKMessageController.m in Sources */,
+				FCD8D30F20C77FFA007EFEAB /* KKDiscoverController.m in Sources */,
+				FCD8D30B20C77FFA007EFEAB /* UIColor+KKColor.m in Sources */,
+				FCD8D31420C77FFA007EFEAB /* KKNavigationController.m in Sources */,
+				FCD8D30E20C77FFA007EFEAB /* KKHomeController.m in Sources */,
+				FCD8D30C20C77FFA007EFEAB /* UIButton+KKButton.m in Sources */,
+				FCD8D31120C77FFA007EFEAB /* KKProfileController.m in Sources */,
+				FCD8D30A20C77FFA007EFEAB /* KKNavigationBar.m in Sources */,
+				FCD8D2CD20C77FA0007EFEAB /* AppDelegate.m in Sources */,
+				FCD8D31320C77FFA007EFEAB /* KKMainTabbarController.m in Sources */,
+				FCD8D31220C77FFA007EFEAB /* KKTestViewController.m in Sources */,
+				FCD8D31520C77FFA007EFEAB /* KKBaseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCD8D2DC20C77FA2007EFEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCD8D2DD20C77FA2007EFEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCD8D2DF20C77FA2007EFEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HP5Z4F29N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KKFrameProject/OtherFiles/KKFrameProject.pch";
+				INFOPLIST_FILE = KKFrameProject/OtherFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.demo.KKFrameProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FCD8D2E020C77FA2007EFEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HP5Z4F29N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KKFrameProject/OtherFiles/KKFrameProject.pch";
+				INFOPLIST_FILE = KKFrameProject/OtherFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.demo.KKFrameProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCD8D2C320C77FA0007EFEAB /* Build configuration list for PBXProject "KKFrameProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD8D2DC20C77FA2007EFEAB /* Debug */,
+				FCD8D2DD20C77FA2007EFEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD8D2DE20C77FA2007EFEAB /* Build configuration list for PBXNativeTarget "KKFrameProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD8D2DF20C77FA2007EFEAB /* Debug */,
+				FCD8D2E020C77FA2007EFEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCD8D2C020C77FA0007EFEAB /* Project object */;
+}
