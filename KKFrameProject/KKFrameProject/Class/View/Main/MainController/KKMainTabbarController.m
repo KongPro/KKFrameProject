@@ -23,7 +23,7 @@
 }
 
 - (void)setUpChildControllers{
-    
+    NSLog(@"test");
     NSArray *consArray = [NSArray arrayWithObjects:
                           @{@"clsName" : @"KKHomeController" , @"title" : @"首页" , @"imageName" : @"tabbar_home"},
                           @{@"clsName" : @"KKMessageController" , @"title" : @"消息" , @"imageName" : @"tabbar_message"},
