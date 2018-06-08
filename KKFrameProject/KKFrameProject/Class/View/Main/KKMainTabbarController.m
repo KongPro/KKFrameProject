@@ -62,6 +62,10 @@
     button.frame = CGRectInset(self.tabBar.bounds, 2 * w, 0);
 }
 
+//   -----   代码设置横竖屏   -----
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
 @end
 
 

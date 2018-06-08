@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    // 测试提交
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = [[NSClassFromString(@"KKMainTabbarController") alloc] init];
     [self.window makeKeyAndVisible];
