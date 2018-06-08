@@ -167,11 +167,11 @@
 		FCD8D2F320C77FFA007EFEAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FCD8D30020C77FFA007EFEAB /* Main */,
 				FCD8D2F420C77FFA007EFEAB /* Home */,
 				FCD8D2F720C77FFA007EFEAB /* Discover */,
 				FCD8D2FA20C77FFA007EFEAB /* Message */,
 				FCD8D2FD20C77FFA007EFEAB /* Profile */,
-				FCD8D30020C77FFA007EFEAB /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,8 +179,8 @@
 		FCD8D2F420C77FFA007EFEAB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				FCD8D2F520C77FFA007EFEAB /* KKHomeController.m */,
 				FCD8D2F620C77FFA007EFEAB /* KKHomeController.h */,
+				FCD8D2F520C77FFA007EFEAB /* KKHomeController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -215,13 +215,13 @@
 		FCD8D30020C77FFA007EFEAB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FCD8D30120C77FFA007EFEAB /* KKNavigationController.h */,
-				FCD8D30220C77FFA007EFEAB /* KKBaseViewController.h */,
 				FCD8D30320C77FFA007EFEAB /* 测试 */,
-				FCD8D30620C77FFA007EFEAB /* KKMainTabbarController.m */,
-				FCD8D30720C77FFA007EFEAB /* KKNavigationController.m */,
-				FCD8D30820C77FFA007EFEAB /* KKBaseViewController.m */,
 				FCD8D30920C77FFA007EFEAB /* KKMainTabbarController.h */,
+				FCD8D30620C77FFA007EFEAB /* KKMainTabbarController.m */,
+				FCD8D30120C77FFA007EFEAB /* KKNavigationController.h */,
+				FCD8D30720C77FFA007EFEAB /* KKNavigationController.m */,
+				FCD8D30220C77FFA007EFEAB /* KKBaseViewController.h */,
+				FCD8D30820C77FFA007EFEAB /* KKBaseViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
