@@ -10,9 +10,6 @@
 
 @interface KKBaseViewController ()
 
-
-@property (nonatomic, strong) KKNavigationBar *navigationBar;
-
 @end
 
 @implementation KKBaseViewController
@@ -23,12 +20,15 @@
 }
 - (void)setUpUI{
     self.view.backgroundColor = [UIColor RandomColor];
+    [self setUpNavigationBar];
+}
+
+- (void)setUpNavigationBar{
     self.navigationBar.items = @[self.navItem];
     self.navigationBar.barTintColor = [UIColor KKColorWithHex:@"0xF6F6F6"];
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor darkGrayColor]};
     [self.view addSubview:self.navigationBar];
 }
-
 
 - (void)setTitle:(NSString *)title{
     self.navItem.title = title;
@@ -36,11 +36,11 @@
 }
 
 #pragma mark -- Lazy
-- (UINavigationBar *)navigationBar{
+- (KKNavigationBar *)navigationBar{
     if (!_navigationBar) {
         _navigationBar = [[KKNavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, kNavigationBarHeight)];
     }
-    return _navigationBar;
+    return (KKNavigationBar *)_navigationBar;
 }
 
 - (UINavigationItem *)navItem{

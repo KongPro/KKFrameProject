@@ -24,4 +24,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)setUpUI{
+    [super setUpUI];
+}
+
 @end

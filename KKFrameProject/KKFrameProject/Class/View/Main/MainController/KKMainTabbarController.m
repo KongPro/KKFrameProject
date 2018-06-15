@@ -46,6 +46,7 @@
     cls.tabBarItem.image = [[UIImage imageNamed:tabImgName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     cls.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_highlighted", tabImgName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [cls.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor orangeColor]} forState:UIControlStateSelected];
+     
     return [[KKNavigationController alloc] initWithRootViewController:cls];
 }
 

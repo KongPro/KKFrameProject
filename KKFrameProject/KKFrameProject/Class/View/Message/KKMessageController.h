@@ -8,6 +8,6 @@
 
 #import "KKBaseViewController.h"
 
-@interface KKMessageController : KKBaseViewController
+@interface KKMessageController : KKBaseTableViewController
 
 @end

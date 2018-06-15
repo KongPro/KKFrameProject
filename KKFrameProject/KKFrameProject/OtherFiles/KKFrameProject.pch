@@ -9,6 +9,11 @@
 #ifndef KKFrameProject_pch
 #define KKFrameProject_pch
 
+//   -----   BaseViewController   -----
+#import "KKBaseViewController.h"
+#import "KKBaseTableViewController.h"
+
+//   -----   Tools   -----
 #import "KKAddition.h"
 #import "KKInheritance.h"
 #import "KKMacro.h"
