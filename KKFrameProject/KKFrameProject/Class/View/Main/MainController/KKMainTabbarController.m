@@ -26,7 +26,7 @@
     NSArray *consArray = [NSArray arrayWithObjects:
                           @{@"clsName" : @"KKHomeController" , @"title" : @"首页" , @"imageName" : @"tabbar_home"},
                           @{@"clsName" : @"KKMessageController" , @"title" : @"消息" , @"imageName" : @"tabbar_message"},
-                          @{@"clsName" : @"UIViewController" , @"title" : @"" , @"imageName" : @""},
+                          @{@"clsName" : @"UIViewController" , @"title" : @"" , @"imageName" : @"UIViewController"},
                           @{@"clsName" : @"KKDiscoverController" , @"title" : @"发现" , @"imageName" : @"tabbar_discover"},
                           @{@"clsName" : @"KKProfileController" , @"title" : @"我的" , @"imageName" : @"tabbar_profile"},nil];
     NSMutableArray *mutableArr = [NSMutableArray array];
