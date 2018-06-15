@@ -75,6 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC064B0820D3982400E8D55A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC064B0920D3982400E8D55A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FC2843F120CA865C004BCF94 /* MainController */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,18 +129,11 @@
 			isa = PBXGroup;
 			children = (
 				FCD8D2F320C77FFA007EFEAB /* View */,
-				FCD8D2E220C77FFA007EFEAB /* ViewModel */,
-				FCD8D2F220C77FFA007EFEAB /* Model */,
+				FC064B0920D3982400E8D55A /* ViewModel */,
+				FC064B0820D3982400E8D55A /* Model */,
 				FCD8D2E320C77FFA007EFEAB /* Tools */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		FCD8D2E220C77FFA007EFEAB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FCD8D2E320C77FFA007EFEAB /* Tools */ = {
@@ -169,13 +176,6 @@
 				FCD8D2F120C77FFA007EFEAB /* UIButton+KKButton.h */,
 			);
 			path = Addition;
-			sourceTree = "<group>";
-		};
-		FCD8D2F220C77FFA007EFEAB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		FCD8D2F320C77FFA007EFEAB /* View */ = {
