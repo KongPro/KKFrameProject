@@ -31,6 +31,12 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view insertSubview:self.tableView belowSubview:self.navigationBar];
+    self.tableView.contentInset = UIEdgeInsetsMake(kNavigationBarHeight, 0, kTabbarHeight, 0);
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 
 - (void)loadData{}

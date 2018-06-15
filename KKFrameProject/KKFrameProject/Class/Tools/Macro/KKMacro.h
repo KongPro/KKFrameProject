@@ -10,5 +10,6 @@
 #define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define kNavigationBarHeight KIsiPhoneX ? 88 : 64
 #define kStatusBarHeight KIsiPhoneX ? 44 : 20
+#define kTabbarHeight KIsiPhoneX ? 49+34 : 49
 
 
