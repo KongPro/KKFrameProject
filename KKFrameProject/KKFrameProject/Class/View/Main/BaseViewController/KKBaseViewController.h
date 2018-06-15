@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface KKBaseViewController : UIViewController
 
 @property (nonatomic, strong) UINavigationBar *navigationBar;
 @property (nonatomic, strong) UINavigationItem *navItem;
-- (void)setUpUI;
 
+- (void)setUpUI;
 @end

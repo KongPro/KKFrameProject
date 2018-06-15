@@ -89,6 +89,17 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FC064B0A20D3988800E8D55A /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8D30220C77FFA007EFEAB /* KKBaseViewController.h */,
+				FCD8D30820C77FFA007EFEAB /* KKBaseViewController.m */,
+				FCDB0BA520D24EEA00294F6E /* KKBaseTableViewController.h */,
+				FCDB0BA620D24EEA00294F6E /* KKBaseTableViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		FC2843F120CA865C004BCF94 /* MainController */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,10 +242,7 @@
 			children = (
 				FCD8D30320C77FFA007EFEAB /* 测试 */,
 				FC2843F120CA865C004BCF94 /* MainController */,
-				FCD8D30220C77FFA007EFEAB /* KKBaseViewController.h */,
-				FCD8D30820C77FFA007EFEAB /* KKBaseViewController.m */,
-				FCDB0BA520D24EEA00294F6E /* KKBaseTableViewController.h */,
-				FCDB0BA620D24EEA00294F6E /* KKBaseTableViewController.m */,
+				FC064B0A20D3988800E8D55A /* BaseViewController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
