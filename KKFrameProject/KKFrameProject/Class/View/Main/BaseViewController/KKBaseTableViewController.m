@@ -10,8 +10,6 @@
 
 @interface KKBaseTableViewController ()
 
-//@property (nonatomic, strong) KKNavigationBar *navigationBar;
-
 @end
 
 @implementation KKBaseTableViewController
@@ -32,6 +30,8 @@
     self.tableView.dataSource = self;
     [self.view insertSubview:self.tableView belowSubview:self.navigationBar];
     self.tableView.contentInset = UIEdgeInsetsMake(kNavigationBarHeight, 0, kTabbarHeight, 0);
+    [self.tableView addSubview:self.refreshControl];
+    [self.refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }else {
@@ -39,7 +39,9 @@
     }
 }
 
-- (void)loadData{}
+- (void)loadData{
+    [self.refreshControl endRefreshing];
+}
 
 
 #pragma mark - Table view data source
@@ -49,6 +51,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [UITableViewCell new];
 }
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSInteger row = indexPath.row;
+    NSInteger section = tableView.numberOfSections - 1;
+    
+    if (row < 0 || section < 0) {
+        return;
+    }
+    NSInteger count = [tableView numberOfRowsInSection:section];
+    if (row == count - 1 && !self.isPullUp) {
+        self.isPullUp = true;
+        [self loadData];
+    }
+}
 
-
+#pragma mark -- Lazy
+- (UIRefreshControl *)refreshControl{
+    if (!_refreshControl) {
+        _refreshControl = [[UIRefreshControl alloc] init];
+    }
+    return _refreshControl;
+}
 @end

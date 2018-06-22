@@ -11,5 +11,7 @@
 @interface KKBaseTableViewController : KKBaseViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+@property (nonatomic, assign) BOOL isPullUp;    // 是否正在上拉加载
 - (void)loadData;
 @end
