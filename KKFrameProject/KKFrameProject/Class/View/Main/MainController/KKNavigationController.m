@@ -9,7 +9,7 @@
 #import "KKNavigationController.h"
 #import "KKBaseViewController.h"
 
-@interface KKNavigationController ()
+@interface KKNavigationController () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -18,6 +18,22 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.navigationBar.hidden = YES;
+    
+    // 禁用系统自带的返回手势
+    self.interactivePopGestureRecognizer.enabled = NO;
+    // 获取系统自带手势的代理对象，让他帮我们做我们自定义手势的ttarget
+    id target = self.interactivePopGestureRecognizer.delegate;
+    // 获取系统自带的手势返回执行的方法  (打印self.interactivePopGestureRecognizer可以查看)
+    UIView *targetView = self.interactivePopGestureRecognizer.view;
+    SEL panAction = NSSelectorFromString(@"handleNavigationTransition:");
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:target action:panAction];
+    panGesture.delegate = self;
+    [targetView addGestureRecognizer:panGesture];
+}
+
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    return self.viewControllers.count > 1 && ![[self valueForKey:@"_isTransitioning"] boolValue];  // 根控制器禁用返回手势
 }
 
 //   -----   重写基类的push方法   -----
