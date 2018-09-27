@@ -36,6 +36,23 @@
     return self.viewControllers.count > 1 && ![[self valueForKey:@"_isTransitioning"] boolValue];  // 根控制器禁用返回手势
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    
+    // 如果当前拖动的是滚动视图，则开启系统侧滑手势，否则就使用自定义全屏返回手势
+    if ([touch.view isKindOfClass:[UIScrollView class]]) {
+        self.interactivePopGestureRecognizer.enabled = YES;
+        return NO;
+    }else{
+        self.interactivePopGestureRecognizer.enabled = NO;
+    }
+    //当拖动的是slider时，该事件不让syPanGesture手势响应
+    if ([touch.view isKindOfClass:[UISlider class]]) {
+        return NO;
+    }
+    return YES;
+}
+
+
 //   -----   重写基类的push方法   -----
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if (self.childViewControllers.count > 0) {
