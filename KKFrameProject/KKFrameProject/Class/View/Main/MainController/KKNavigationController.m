@@ -39,14 +39,13 @@
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
     
-    // 如果当前拖动的是滚动视图，则开启系统侧滑手势，否则就使用自定义全屏返回手势
+    // 如果当前拖动的是滚动视图，则恢复系统侧滑手势，否则使用自定义全屏返回手势
     if ([touch.view isKindOfClass:[UIScrollView class]]) {
         self.interactivePopGestureRecognizer.enabled = YES;
         return NO;
     }else{
         self.interactivePopGestureRecognizer.enabled = NO;
     }
-    
     //当拖动的是slider时，该事件不让syPanGesture手势响应
     if ([touch.view isKindOfClass:[UISlider class]]) {
         return NO;
