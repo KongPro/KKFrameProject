@@ -25,6 +25,7 @@
     id target = self.interactivePopGestureRecognizer.delegate;
     // 获取系统自带的手势返回执行的方法  (打印self.interactivePopGestureRecognizer可以查看)
     UIView *targetView = self.interactivePopGestureRecognizer.view;
+    
     SEL panAction = NSSelectorFromString(@"handleNavigationTransition:");
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:target action:panAction];
     panGesture.delegate = self;
@@ -45,6 +46,7 @@
     }else{
         self.interactivePopGestureRecognizer.enabled = NO;
     }
+    
     //当拖动的是slider时，该事件不让syPanGesture手势响应
     if ([touch.view isKindOfClass:[UISlider class]]) {
         return NO;
